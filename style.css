@@ -38,6 +38,7 @@ body {
 .hero {
     background: var(--color-black);
     color: var(--color-white);
+    text-align: center;
 }
 
 .container {
