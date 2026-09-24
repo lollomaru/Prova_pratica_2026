@@ -27,16 +27,20 @@ img {
      --font-body:"Mona Sans";
      --font-mono: "Mona Sans Mono";
      --heading-font-size-1:56px ;
+     --categoria-info-font-size: 14px;
+     --categoria-title-font-size:16px;
      --heading-line-heigt-1:1.1;
      --color-black: #000;
      --color-white: #fff;
       --color-muted:#A4AEA6;
      --color-border-muted:#191F1B;
+     --color-border-muted-fixed: #E4EBE6;
      --color-cursor:#5FED83;
      --color-button-primary-bg: #08872B;
      --color-button-secondary-bg: rgba(255 ,255 ,255 , 0.12);
      --color-button-secondary-border: rgba(255 ,255 ,255 , 0.06);
      --color-focus:#3094ff; 
+     --color-text-muted: #58635B;
      --container-width: 1280px;
      --spacing-64: 64px;
      --eyebrow-font-size:14px;
@@ -184,10 +188,18 @@ border-color: var(--color-button-secondary-border);
 .info-column {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
+.categoria-info {
+    color: var(--color-text-muted);
+    font-size: var(--categoria-info-font-size);
+}
 
-
+.categoria-title {
+    font-weight: 600;
+    font-size: var(--categoria-title-font-size);
+}
 
 
 
