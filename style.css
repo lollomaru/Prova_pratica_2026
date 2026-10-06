@@ -284,6 +284,60 @@ letter-spacing: 0.24px;
     padding-top: 11px;
 }
 
+.breakdownTabs-toggle {
+    display: none;
+    width:22px;
+    height:22px;
+    display: none;
+    fill:var(--color-button-primary-bg)
+}
+@media (max-width: 999px) {
+
+    .breakdownTabs-toggle {
+        display: block;
+    }
+}
+
+.tab-img .img {
+    display: none;
+}
+.tab-img .img:first-child {
+    display: block;
+}
+
+.tab-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.tab.is-selected .breakdownTabs-toggle {
+    transform: rotate(180deg);
+}
+
+.breakdownTabs:has(#item-study.is-selected)
+.img-study {
+    display: block;
+}
+
+.breakdownTabs:has(#item-build.is-selected)
+.img-build {
+    display: block;
+}
+
+.breakdownTabs:has(#item-verify.is-selected)
+.img-verify {
+    display: block;
+}
+
+.breakdowTabs-ready
+.tab-item:not(.is-selected) 
+.tab-text {
+    display: none;
+}
 
 
 
