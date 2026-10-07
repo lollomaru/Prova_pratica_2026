@@ -59,3 +59,29 @@ desktopMedia.addEventListener('change', function () {
   else if (desktopMedia.matches && focusOnButton) navigationPanel.querySelector('a').focus();
   else if (!desktopMedia.matches && focusInNavigation) navigationButton.focus();
 });
+
+// Breakout tabs
+const breakdownTabs = document.querySelector('.breakdownTabs');
+const tabItems = document.querySelectorAll('.tab-item');
+const tabButtons = document.querySelectorAll('.tab-button');
+
+breakdownTabs.classList.add('breakdownTabs-ready');
+
+function selectTab(position) {
+    for (let i = 0; i < tabItems.length; i++) {
+
+        if (i === position) {
+            tabItems[i].classList.add('is-selected');
+        } else {
+            tabItems[i].classList.remove('is-selected');
+        }
+
+    }
+}
+for (let i = 0; i < tabButtons.length; i++) {
+
+  tabButtons[i].addEventListener('click', function () {
+    selectTab(i);
+  });
+
+}
