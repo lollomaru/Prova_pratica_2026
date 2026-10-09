@@ -115,7 +115,7 @@ gap: var(--hero-content-gap)
     font-family: var(--font-mono);
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-text-muted);
+    color: var(--color-text-muted-fixed);
     display: flex;
     justify-content: center;
     align-items: center;
