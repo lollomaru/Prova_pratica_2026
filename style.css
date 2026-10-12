@@ -727,13 +727,13 @@ html {
 }
 
 .concept-card-icon {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     background:var(--background-color-icon);
-    border-radius: 12px;
+    border-radius: 8px;
     margin-bottom: var(--spacing-48);
 }
 
